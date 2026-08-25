@@ -1,0 +1,186 @@
+:root {
+    --background: #121212;
+    --surface: #222222;
+    --text: #FFFFFF;
+    --text-muted: #888888;
+    --accent: #FF5733;
+    --border: #333333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text);
+    transition: color 0.3s ease;
+}
+
+header {
+    background-color: var(--surface);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.menu a {
+    color: var(--text);
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: var(--text);
+    margin: 4px 0;
+}
+
+.hero {
+    padding: 5rem 2rem;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('assets/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    color: var(--text);
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: var(--accent);
+    color: var(--text);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero button:hover {
+    background-color: var(--text);
+    color: var(--accent);
+}
+
+.projects, .about, .services, .how-it-works, .cta, .contact {
+    padding: 2rem;
+    background-color: var(--surface);
+    margin: 2rem 0;
+    transition: background-color 0.3s ease;
+}
+
+.projects article, .services article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: var(--surface);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.projects article img, .services article img {
+    max-width: 100%;
+    margin-bottom: 1rem;
+}
+
+.projects button, .services button {
+    margin-top: 1rem;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact form label {
+    margin-bottom: 0.5rem;
+}
+
+.contact form input, .contact form textarea {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+}
+
+.contact form button {
+    padding: 0.5rem;
+    background-color: var(--accent);
+    color: var(--text);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact form button:hover {
+    background-color: var(--text);
+    color: var(--accent);
+}
+
+footer {
+    background-color: var(--surface);
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+}
+
+footer a {
+    color: var(--text);
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav a {
+        margin: 0.5rem 0;
+    }
+}

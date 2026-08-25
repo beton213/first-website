@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tworzę nowoczesne strony internetowe dla małych firm.">
+    <title>Twoje Imię / WEB DEV</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Twoje Imię / WEB DEV</div>
+            <div class="menu">
+                <a href="#projects">Projekty</a>
+                <a href="#about">O mnie</a>
+                <a href="#services">Usługi</a>
+                <a href="#contact">Kontakt</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Tworzę nowoczesne strony internetowe dla firm.</h1>
+            <p>Projektuję szybkie, responsywne i nowoczesne strony, które pomagają firmom dobrze wyglądać w internecie.</p>
+            <button onclick="window.location.href='#projects';">Zobacz projekty</button>
+            <button onclick="window.location.href='#contact';">Napisz do mnie</button>
+            <p>Dostępny na nowe projekty</p>
+        </section>
+        <section class="projects" id="projects">
+            <h2>Wybrane projekty</h2>
+            <article class="project">
+                <img src="assets/project1.png" alt="Barber House">
+                <h3>Barber House</h3>
+                <p>Nowoczesna strona dla lokalnego barbera prezentująca usługi, ceny oraz możliwość rezerwacji.</p>
+                <p>Technologie: HTML • CSS • JavaScript</p>
+                <button onclick="window.location.href='#';">Zobacz projekt</button>
+            </article>
+            <article class="project">
+                <img src="assets/project2.png" alt="Studio Foto">
+                <h3>Studio Foto</h3>
+                <p>Minimalistyczne portfolio fotografa z galerią realizacji i formularzem kontaktowym.</p>
+                <p>Technologie: HTML • CSS • JavaScript</p>
+                <button onclick="window.location.href='#';">Zobacz projekt</button>
+            </article>
+            <article class="project">
+                <img src="assets/project3.png" alt="Auto Detailing">
+                <h3>Auto Detailing</h3>
+                <p>Strona firmy detailingowej prezentująca ofertę, realizacje i dane kontaktowe.</p>
+                <p>Technologie: HTML • CSS • JavaScript</p>
+                <button onclick="window.location.href='#';">Zobacz projekt</button>
+            </article>
+        </section>
+        <section class="about" id="about">
+            <h2>O mnie</h2>
+            <p>Tworzę nowoczesne i proste strony internetowe dla małych firm i lokalnych biznesów. Zależy mi przede wszystkim na szybkości, przejrzystości i dobrym wyglądzie zarówno na komputerze, jak i telefonie.</p>
+        </section>
+        <section class="services" id="services">
+            <h2>Usługi</h2>
+            <article class="service">
+                <h3>Strony internetowe</h3>
+                <p>Projektowanie i tworzenie nowoczesnych stron firmowych.</p>
+            </article>
+            <article class="service">
+                <h3>Landing page</h3>
+                <p>Proste strony nastawione na przedstawienie jednej usługi lub produktu.</p>
+            </article>
+            <article class="service">
+                <h3>Modernizacja strony</h3>
+                <p>Odświeżenie wyglądu starej strony i poprawienie jej wersji mobilnej.</p>
+            </article>
+        </section>
+        <section class="how-it-works" id="how-it-works">
+            <h2>Jak pracuję</h2>
+            <ol>
+                <li><h3>Rozmowa</h3><p>Skontaktuj się ze mną, omów Twoje potrzeby.</p></li>
+                <li><h3>Projekt</h3><p>Stwórz projekt, dostosowany do Twoich potrzeb.</p></li>
+                <li><h3>Realizacja</h3><p>Wdrożenie projektu na serwer.</p></li>
+                <li><h3>Publikacja</h3><p>Publikacja projektu na żywo.</p></li>
+            </ol>
+        </section>
+        <section class="cta">
+            <h2>Masz firmę, ale Twoja strona pamięta jeszcze Internet Explorer?</h2>
+            <p>Zróbmy coś lepszego.</p>
+            <button onclick="window.location.href='#contact';">Porozmawiajmy</button>
+        </section>
+        <section class="contact" id="contact">
+            <h2>Zróbmy razem coś dobrego.</h2>
+            <p>Skontaktuj się ze mną:</p>
+            <form>
+                <label for="name">Imię:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Wiadomość:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Wyślij</button>
+            </form>
+            <p>Instagram: <a href="https://instagram.com" target="_blank">@TwojeImię</a></p>
+            <p>GitHub: <a href="https://github.com" target="_blank">@TwojeImię</a></p>
+        </section>
+    </main>
+    <footer>
+        <p>© 2026 Twoje Imię</p>
+        <a href="https://github.com" target="_blank">GitHub</a>
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+        <a href="mailto:kontakt@example.com">Email</a>
+    </footer>
+</body>
+</html>
